@@ -1,0 +1,21 @@
+h1 {
+    color: green;
+}
+
+h1#topheader{
+    color:black;
+}
+
+body h1{
+    color: red;
+}
+
+h1.iwillwin{
+    color: navy;
+}
+
+p#something-important{
+    color:red;
+}
+
+*{color: gray;}

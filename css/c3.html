@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/chapter3.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+            <nav></nav>
+        </header>
+
+        <section id="chapter3">
+            <header>
+                <h1 id="topheader">Structure and Cascade</h1>
+            </header>
+            <h1>Specificity</h1>
+            <h1 class="iwillwin" style="color:green;">More specificity same element now with a class</h1>
+
+            <p id="something-important" >Going crazy with <em>!important</em> with an inline styling. We expect the <em>!important</em> to win</p>
+
+            <h2 style="color:blue">Some <em>Inheritance</em> being messed by a universal selector</h2>
+
+            <ol>
+                <li>Cascading
+                    <ol>
+                        <li>Reader important declarations</li>
+                        <li>Author important declarations</li>
+                        <li>Author normal declarations</li>
+                        <li>Reader normal declarations</li>
+
+                    </ol>
+                </li>
+                <li>Sorting by Specificity
+                    <ol>
+                        <li>Inline</li>
+                        <li>ID attrubute</li>
+                        <li>Class and pseudo-classes</li>
+                        <li>Elements and pseudo-elements</li>
+                    </ol>
+                </li>
+                <li>Sorting by Order</li>
+            </ol>
+        </section>
+
+    </body>
+</html>
