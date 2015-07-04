@@ -1,0 +1,63 @@
+p.one {
+    color: rgb(0%,0%,0%);
+}
+p.two {
+    color: rgb(20%,20%,20%);
+}
+p.three {
+    color: rgb(40%,40%,40%);
+}
+p.four {
+    color: rgb(60%,60%,60%);
+}
+p.five {
+    color: rgb(80%,80%,80%);
+}
+
+p.six {
+    color: rgb(0,0,0);
+}
+p.seven {
+    color: rgb(51,51,51);
+}
+p.eight {
+    color: rgb(102,102,102);
+}
+p.nine {
+    color: rgb(153,153,153);
+}
+p.ten {
+    color: rgb(204,204,204);
+}
+
+
+h2 {
+    color: rgb(25.5%,40%,98.6%);
+}
+
+h3{
+    color: #6FA;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h4, h5 {
+    margin-left: 1em;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+
+#toolbar {
+    background: blue; color: white;
+}
+
+#toolbar a {color: inherit;}
