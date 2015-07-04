@@ -1,0 +1,116 @@
+body:after{
+    content: "THE END";
+    font-size: 60pt;
+}
+
+p{
+    color: red;
+    font:medium/200% Helvetica;
+}
+
+
+h1, h2{
+    color: gray;
+    padding: 0.5em;
+    border: 1px solid black;
+    font-family: Charcoal, sans-serif;
+
+}
+
+h1:first-letter{
+    font-size: 40pt;
+    color: black;
+}
+
+*{
+    font-style: italic;
+}
+
+.warning{
+    font-style: italic;
+}
+
+p.warning{
+    font-weight: bold;
+}
+
+p.warning.urgent{
+    color:yellow;
+}
+
+#onlyone{
+    text-decoration: underline;
+}
+
+p[class]{
+    color:silver;
+}
+
+a[href][title]{
+    color:green;
+}
+
+a[href="http://ikosenn.me"][title="attribute"]{
+    font-size: 30pt;
+}
+
+p[class~="table"]{
+    margin-left: 30px;
+}
+
+
+p[class^="s"]{
+    font-size: 6px;
+}
+
+p[class*="arg"]{
+    font-size: 40px;
+}
+
+p[class$="ium"]{
+    font-size: 20px;
+}
+
+
+p[lang|="en"]{
+    color:red;
+    background: blue;
+}
+
+blockquote em, p em{
+    color: aqua;
+}
+
+h1 > strong{
+    font-size: 32pt;
+    color: green;
+}
+
+
+ul + ol > li{
+    font-family: Arial, serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+input[type="password"]:focus{
+    border: solid 1px red;
+}
+
+ul.mylist > li:first-child{
+    color:orange;
+}
+
+
+*:lang(gr){
+    font-size: 70pt;
+}
+
+p.lorem-text:first-line{
+    color: purple;
+    letter-spacing: 5px;
+}
+
+blockquote:before{
+    content: '"';
+
