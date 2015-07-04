@@ -1,0 +1,17 @@
+h1{
+    color: maroon;
+    font: italic 2em Times, serif;
+    text-decoration: underline;
+    background: yellow;
+}
+
+h2, h3, h4 {
+    color: gray;
+    background: white;
+    /* This is a CSS comment*/
+}
+
+a:link, a:visited{
+    color:white;
+    background: black;
+}
