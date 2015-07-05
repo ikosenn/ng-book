@@ -1,0 +1,25 @@
+body {
+    color: black;
+    height: 1600px;
+}
+a:link {
+    color: #808080;
+}
+a:active {
+    color: silver;
+}
+a:visited {
+    color: #333333;
+}
+
+input{
+    color: green;
+}
+
+body{
+    background: url(../img/watermark.gif);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
