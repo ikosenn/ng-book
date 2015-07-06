@@ -1,0 +1,36 @@
+body{
+    counter-reset: chapter;
+}
+ul.mylist{
+    list-style-type: armenian;
+}
+
+li:after{
+    content: " -----:after--------";
+}
+
+a[href]:after{
+    content: "[" attr(href) "]";
+}
+
+
+p {quotes: '\201C' '\201D' '\2018' '\2019';}
+p.quote:before{
+    content: open-quote;
+}
+
+p.quote:after{
+    content: close-quote;
+}
+
+h1:before {
+    counter-reset: section subsec;
+    counter-increment: chapter;
+    content: counter(chapter, upper-alpha) ". ";}
+h2:before {
+    counter-reset: subsec;
+    counter-increment: section;
+    content: counter(chapter )"." counter(section) ". ";}
+h3:before {
+    counter-increment: subsec;
+    content: counter(chapter) "." counter(section) "." counter(subsec) ". ";}
