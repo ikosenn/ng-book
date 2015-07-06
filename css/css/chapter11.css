@@ -51,10 +51,10 @@ table.fixed-layout td {
 table.fixed-layout col#c1 {
     width: 200px;
 }
-table.fixed-layout #r1c2 {
+table.fixed-layout #fr1c2 {
     width: 75px;
 }
-table.fixed-layout #r2c3 {
+table.fixed-layout #fr2c3 {
     width: 400px;
 }
 
