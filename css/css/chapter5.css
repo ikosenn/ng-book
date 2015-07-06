@@ -1,0 +1,84 @@
+p.sans{
+    font-family: sans-serif;
+}
+
+p.signature{
+    font-family: cursive;
+}
+
+p.mono{
+    font-family: monospace;
+}
+
+p.serif{
+    font-family: serif;
+}
+p.georgia{
+    font-family: Georgia;
+}
+
+p.order {
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+
+}
+
+p.fantasy{
+    font-family: Wedgie, 'Karrank%', Klingon, fantasy;
+}
+
+p.bold{
+    font-weight: bold;
+}
+p.relative{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+p.one {
+    font-size: xx-small;
+}
+p.two {
+    font-size: x-small;
+}
+p.three {
+    font-size: small;
+}
+p.four {
+    font-size: medium;
+}
+p.five {
+    font-size: large;
+}
+p.six {
+    font-size: x-large;
+}
+p.seven {
+    font-size: xx-large;}
+
+p.sizing1{
+    font-size: 1.6em;
+}
+
+p.sizing2{
+    font-size: 166%;
+}
+
+
+p.pix{
+    font-size: 20px;
+    font-style: oblique;
+}
+p.smallcaps{
+    font-family: Georgia, serif;
+    font-size: 40pt;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size-adjust:0.28;
+}
+button {
+    font: caption;
+}
+p.pt{
+    font-size: 20pt;
+    font-style: italic;
+}

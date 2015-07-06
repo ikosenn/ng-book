@@ -1,0 +1,33 @@
+div.hw{
+    height: 200px;
+    width:200px;
+    background: yellow;
+
+}
+
+p.margins{
+    margin:40px;
+}
+
+p.pm{
+    margin: 20%;
+}
+
+p.pm{
+    margin: 10%;
+}
+
+span.inline-margins{
+    margin: 100px;
+}
+
+p.aside {
+    border-style: solid dashed dotted inset;
+    border-color: red blue yellow #388990;
+    padding:30px;
+}
+
+span.border{
+    border: 14px solid green;
+
+}

@@ -1,0 +1,36 @@
+p.width{
+    background: #eee;
+    padding: 10px;
+    margin: 20px;
+    width:200px;
+    border: solid 1px blue;
+}
+
+p.auto{
+    background: #eee;
+    padding: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    width:200px;
+    border: solid 1px blue;
+}
+
+li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+div.height{
+    height: auto;
+    background: red;
+    padding-top: 10px;
+}
+
+p.neg{
+    margin-top: -50px;
+    background: #808080;
+}
+
+span.border{
+    border: solid 1px blue;
+}
