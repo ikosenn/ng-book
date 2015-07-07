@@ -1,3 +1,26 @@
+ul.menu li{
+    list-style: none;
+    float: left;
+    background: gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+header{
+    clear:both;
+}
+
+footer{
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    background-color: blue;
+    width: 100%;
+
+}
+
+
 @media (max-width: 480px){
     h1.name {
         color: red;
@@ -22,9 +45,34 @@
     }
 }
 
-@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5){
+@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2){
     body{
-        background: url('img/12.jpg');
+        background: url(../img/12.jpeg);
         background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
+}
+
+@media (orientation: portrait ){
+    ul.menu li{
+        float: none;
+
+    }
+}
+
+@media (min-device-aspect-ratio: 16/9) and (min-width:800px){
+    h2{
+        color: red;
+    }
+}
+
+
+@media (min-height: 700px){
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        left:0;
+    }
+
 }
