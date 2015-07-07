@@ -22,7 +22,7 @@
     }
 }
 
-@media (resolution: 144dpi){
+@media (min-resolution: 144dpi), (-webkit-device-pixel-ratio: 2){
     body{
         background: url('img/12.jpg');
         background-size: 100% 100%;
