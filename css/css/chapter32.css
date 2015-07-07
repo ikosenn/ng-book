@@ -1,0 +1,30 @@
+@media (max-width: 480px){
+    h1.name {
+        color: red;
+    }
+}
+
+@media (min-width: 640px){
+    h1.name {
+        color: blue;
+    }
+}
+
+@media (max-height:400px){
+    p.height {
+        color: red;
+    }
+}
+
+@media (min-height: 500px){
+    p.height {
+        color: blue;
+    }
+}
+
+@media (resolution: 144dpi){
+    body{
+        background: url('img/12.jpg');
+        background-size: 100% 100%;
+    }
+}
