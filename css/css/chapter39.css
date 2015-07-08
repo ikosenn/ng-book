@@ -1,0 +1,34 @@
+body{
+    margin: 20px;
+}
+
+div{
+    border: 3px solid #000;
+
+}
+
+div#borders{
+    border-radius:10px 20px 20px / 20px 10px;
+    width: 200px;
+    height: 100px;
+}
+
+
+div.circle{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+div.ellipsis{
+    border-radius: 50%;
+    height: 200px;
+    width: 400px;
+}
+
+div.shadows{
+    height: 300px;
+    width: 300px;
+    background: #000;
+    box-shadow: 15px 15px 5px -6px #bbb;
+}
