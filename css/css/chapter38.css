@@ -1,0 +1,12 @@
+body{
+ /*  background: url(../img/12.jpeg);
+    background-position: right 10em bottom 50%;*/
+
+    /*background: url(../img/watermark.gif);
+    background-repeat: space;*/
+
+    background: url(../img/mug.jpg), url(../img/12.jpeg);
+    background-position: top center, center center;
+    background-repeat: no-repeat;
+    background-size:30% auto, auto auto;
+}
