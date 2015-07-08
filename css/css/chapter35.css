@@ -1,0 +1,92 @@
+@font-face{
+    font-family: 'Indieflower';
+    src: url(../fonts/indieflower-webfont.eot);
+    src: url(../fonts/indieflower-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/indieflower-webfont.woff) format('woff'),
+    url(../fonts/indieflower-webfont.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'shadows';
+    src: url(../fonts/shadowsintolight-webfont.eot);
+    src: url(../fonts/shadowsintolight-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/shadowsintolight-webfont.woff) format('woff'),
+    url(../fonts/shadowsintolight-webfont.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'lobstertwo';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/lobstertwo-regular-webfont.eot);
+    src: url(../fonts/lobstertwo-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/lobstertwo-regular-webfont.woff) format('woff'),
+    url(../fonts/lobstertwo-regular-webfont.ttf) format('truetype');
+
+}
+
+@font-face{
+    font-family: 'lobstertwo';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/lobstertwo-italic-webfont.eot);
+    src: url(../fonts/lobstertwo-italic-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/lobstertwo-italic-webfont.woff) format('woff'),
+    url(../fonts/lobstertwo-italic-webfont.ttf) format('truetype');
+
+}
+
+@font-face{
+    font-family: 'lobstertwo';
+    font-weight: 900;
+    src: url(../fonts/lobstertwo-bold-webfont.eot);
+    src: url(../fonts/lobstertwo-bold-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/lobstertwo-bold-webfont.woff) format('woff'),
+    url(../fonts/lobstertwo-bold-webfont.ttf) format('truetype');
+
+}
+
+@font-face{
+    font-family: 'lobstertwo';
+    font-style: italic;
+    font-weight: 900;
+    src: url(../fonts/lobstertwo-bolditalic-webfont.eot);
+    src: url(../fonts/lobstertwo-bolditalic-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/lobstertwo-bolditalic-webfont.woff) format('woff'),
+    url(../fonts/lobstertwo-bolditalic-webfont.ttf) format('truetype');
+
+}
+
+
+h1.a{
+    font-family: 'Indieflower';
+}
+
+h1.b{
+    font-family: 'shadows';
+}
+
+h1.c{
+    font-family: 'lobstertwo';
+}
+
+h1.d{
+    font-family: 'lobstertwo';
+    font-style: italic;
+}
+
+h1.e{
+    font-family: 'lobstertwo';
+    font-weight: bold;
+}
+
+h1.f{
+    font-family: 'lobstertwo';
+    font-style: italic;
+    font-weight: bold;
+}
+
+p.a{
+    font-family: serif;
+    font-feature-settings: "dlig";
+}

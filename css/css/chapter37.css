@@ -1,0 +1,11 @@
+.columns{
+    -webkit-column-count: 4;
+    -webkit-column-gap: 3em;
+    -webkit-column-rule: 2px solid #f1f1f1;
+    margin: 20px;
+
+
+}
+.columns h1{
+    -webkit-column-span:all;
+}

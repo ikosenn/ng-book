@@ -1,0 +1,28 @@
+p[class^="red"]{
+    color: #ff0000;
+}
+
+p[class$='en']{
+    color: #00ff00;
+}
+
+a[href*="google"]:link{
+    color: red;
+}
+a[href*="google"]:visited{
+    color: green;
+}
+
+a[href*="google"]:hover{
+    color: blue;
+}
+
+p[class^="multiple"],[class$="attributes"]{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+h2 ~ p{
+    font-family: cursive;
+    font-style: italic;
+}

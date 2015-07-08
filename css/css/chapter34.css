@@ -1,0 +1,42 @@
+table{
+    width: 800px;
+    margin: 40px;
+    table-layout: fixed;
+
+}
+
+table > thead > tr> th{
+    text-align: left;
+}
+table  tr{
+    height: 50px;
+}
+table  tr td,th{
+    padding: 10px;
+}
+table.striped > tbody >tr:nth-child(even){
+    background-color: #eee;
+}
+
+table.striped > tbody > tr >td:nth-child(3){
+   color: green;
+
+}
+section#random > p:nth-of-type(2n) {
+    color: green;
+}
+
+table.striped > thead{
+    background-color: gray;
+}
+
+.tyrant:target{
+    background-color: #330000;
+    color: white;
+}
+
+
+p::selection{
+    color: white;
+    background-color: black;
+}
