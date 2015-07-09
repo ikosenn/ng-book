@@ -1,0 +1,41 @@
+div{
+    margin: 20px;
+    width: 400px;
+    height: 100px;
+}
+div.linear{
+    background-image: linear-gradient(yellow, blue);
+
+}
+
+div.linear1{
+    background-image: linear-gradient(yellow 75%, blue);
+
+}
+
+div.linear2{
+    background-image: linear-gradient(45deg,blue, yellow, blue);
+}
+
+div.linear3{
+    background-image: repeating-linear-gradient(45deg,blue, yellow 25%);
+}
+div.linear4{
+background-image: repeating-linear-gradient(315deg, black, black 2px, white 2px, white 4px);
+}
+
+div.radial{
+    background-image: radial-gradient(circle, yellow, blue);
+
+}
+
+div.radial1{
+    background-image: radial-gradient(farthest-side circle at 0 100%, yellow, blue);
+
+}
+div.gradient-3{
+    background-image: repeating-radial-gradient(circle farthest-corner, white, black 1px, white 2px);
+}
+div.gradient-2 {
+    background-image: repeating-radial-gradient(circle farthest-corner at left,white, white 10px, black 15px);
+} 􏰀
