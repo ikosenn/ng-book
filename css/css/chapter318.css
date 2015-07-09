@@ -1,0 +1,77 @@
+div[class*="background"]{
+    width: 300px;
+    height: 200px;
+    background: url(../img/12.jpeg) red;
+    background-size: 100%;
+    margin:10px;
+    float: left;
+}
+
+
+div.background-multiply{
+
+    background-blend-mode:multiply;
+
+}
+
+div.background-screen{
+     background-blend-mode:screen;
+
+}
+
+div.background-overlay{
+    background-blend-mode:overlay;
+}
+
+.clear{
+    clear: both;
+}
+
+div.filter{
+    width: 300px;
+    height: 200px;
+    background: url(../img/mug.jpg);
+    background-size: 100%;
+    margin:10px;
+    float: left;
+    isolation:isolate;
+}
+.mix-blend{
+    color: green;
+    mix-blend-mode: multiply;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.blur{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.contrast{
+    filter: contrast(30%);
+    -webkit-filter: contrast(30%);
+}
+
+
+.saturation{
+    filter: saturate(50%);
+    -webkit-filter: saturate(50%);
+}
+
+.hue-rotate{
+    -webkit-filter: hue-rotate(140deg);
+    filter: hue-rotate(140deg);
+}
+
+.shadow{
+    filter: drop-shadow(5px 5px 5px black);
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+
+}
+.clip-path {
+     clip-path: circle(95px at 55% 50%);
+    -webkit-clip-path: circle(95px at 55% 50%);
+
+
+}

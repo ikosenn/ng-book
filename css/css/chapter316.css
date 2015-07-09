@@ -1,0 +1,21 @@
+div.viewport{
+    height: 10vh;
+    width: 100vw;
+    background-color: green;
+    color: white;
+}
+
+
+ul.em li{
+    font-size: 1.5em;
+}
+
+ul.rem li{
+    font-size: 1.5rem;
+}
+
+div.calc{
+    width: calc(50% - 200px);
+    background-color: red;
+    color: white;
+}
