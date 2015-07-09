@@ -1,0 +1,49 @@
+h1#page-title{
+    color: black;
+    transition: color;
+}
+
+h1#page-title:hover{
+    color: red;
+}
+
+
+/*ul.progress{
+
+}*/
+
+ul.progress>li{
+    color: white;
+    width:250px;
+    background-color: orange;
+    list-style: none;
+    margin-top: 10px;
+    padding: 15px;
+
+    transition-property: width;
+    transition-duration: 1.5s;
+}
+
+ul.progress>li:hover{
+    width: 600px;
+
+}
+ul.progress>li:hover:nth-child(1){
+    transition-timing-function: ease;
+}
+ul.progress>li:hover:nth-child(2){
+    transition-timing-function: ease-out;
+}
+ul.progress>li:hover:nth-child(3){
+    transition-timing-function: ease-in;
+}
+ul.progress>li:hover:nth-child(4){
+    transition-timing-function: ease-in-out;
+}
+ul.progress>li:hover:nth-child(5){
+    transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.7);
+}
+ul.progress>li:hover:nth-child(6){
+    transition-timing-function: linear;
+
+}
