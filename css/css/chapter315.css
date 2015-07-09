@@ -1,0 +1,31 @@
+div[id*='item']{
+    width: 80px;
+    height:80px;
+
+}
+
+div.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+
+form.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+
+div.flex>#item1{
+    background-color: blue;
+}
+
+div.flex>#item2{
+    background-color: green;
+}
+
+div.flex>#item3{
+    background-color: yellow;
+}
+
+div.flex>#item4{
+    background-color: red;
+}
