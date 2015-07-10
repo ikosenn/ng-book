@@ -1,0 +1,23 @@
+{
+  "name": "ng-book",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ikosenn/ng-book",
+  "authors": [
+    "Ian Kosen <i@ikosenn.me>"
+  ],
+  "description": "My angular work out",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2"
+  }
+}
