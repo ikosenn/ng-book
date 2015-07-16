@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app.dexplained">
+    <head>
+        <title>Directives Explained Angular</title>
+    </head>
+    <body>
+    <div ng-controller="DisplayController">
+        <div transclude-directive>
+            <ul>
+                <li>Controller</li>
+                <li>Directive</li>
+                <li>Services</li>
+                <ul>
+                    <li>Factories</li>
+                    <li>Service</li>
+                    <li>Provider</li>
+                </ul>
+            </ul>
+            <button ng-click="displayAlert()">Show Alert</button>
+        </div>
+
+        <div transclude-directive>
+            <p>Angular is a framework for creating Web Applications</p>
+        </div>
+
+        <h2>Compile Function</h2>
+        <recompile-directive></recompile-directive>
+    </div>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/dexplained.js"></script>
+
+
+    </body>
+</html>

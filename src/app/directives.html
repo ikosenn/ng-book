@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app.directives">
+    <head>
+        <title>Directives Angular</title>
+    </head>
+    <body>
+
+    <label>Two way Data Binding(Outside the Directive)</label><input type="text" ng-model="twoWay">
+    <simple-directive day-today="Monday" two-way="twoWay"></simple-directive>
+    <div simple-directive day-today="Monday" ></div>
+    <div class="simple-directive" day-today="Monday"></div>
+    <!-- directive: simple-directive-->
+        <script src="../../bower_components/angular/angular.min.js"></script>
+
+        <script type="text/javascript" src="js/directives.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app.xhr">
+    <head>
+        <title>XHR and Server-Side Communication Angular</title>
+    </head>
+    <body>
+    <h1>Categories Data from Guidelines $resource</h1>
+    <div ng-controller="CategoriesController">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Has Content</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="category in categories">
+                <td>{{category.id}}</td>
+                <td>{{category.name}}</td>
+                <td>{{category.code}}</td>
+                <td>{{category.hasContent}}</td>
+                <td></td>
+            </tr>
+       </table>
+    </div>
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+
+        <script type="text/javascript" src="../../bower_components/angular-resource/angular-resource.min.js"></script>
+
+        <script type="text/javascript" src="../../bower_components/lodash/lodash.min.js"></script>
+
+        <script type="text/javascript" src="../../bower_components/restangular/dist/restangular.min.js"></script>
+
+        <script type="text/javascript" src="js/xhr.js"></script>
+
+
+    </body>
+</html>

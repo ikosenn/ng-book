@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="app.bdirectives">
+    <head>
+        <title>Built-In Directives Angular</title>
+
+        <style type="text/css">
+            .even{
+                color: green;
+            }
+
+        </style>
+    </head>
+    <body ng-init="greeting='Hello Ian... How was your day?'">
+    <form>
+        <div>
+            <label>Type to enable button</label>
+            <input type="text" ng-model="name">
+        </div>
+        <div>
+            <label>Enter Url</label>
+            <input type="url" ng-model="mylink">
+        </div>
+
+        <div>
+            <label>Image to load</label>
+            <input type="text" ng-model="myimage">
+        </div>
+        <div>
+            <label>Read-only text</label>
+            <input type="text" ng-readonly="name" value="Read only text">
+        </div>
+
+        <div>
+            <button ng-disabled="!name">ngDisable</button>
+        </div>
+    </form>
+
+        <div>
+            <a ng-href ="{{mylink}}">The url entered above</a>
+
+        </div>
+
+        <div>
+
+            <img ng-src="{{myimage}}">
+        </div>
+
+        <div ng-include src="'templates/helloworld.html'" ></div>
+
+        <form>
+            <input type="text" ng-model="person.name">
+            <div ng-switch on="person.name">
+                <p ng-switch-default>Enter your name</p>
+                <p ng-switch-when="Ian Kosen">My name is {{person.name}}</p>
+            </div>
+        </form>
+
+        <div ng-if="2+2 === 4">ng-if completely removes the element if it is false</div>
+        <div ng-if="2+2 === 5">This doesn't show</div>
+
+        <div ng-controller="CityController">
+            <p>ngRepeat with ngClass on even lists</p>
+            <ul>
+                <li ng-repeat="city in cities" ng-class="{even: !$even}">{{city.name}} - {{city.capital_city}}</li>
+            </ul>
+        </div>
+
+        <p ng-bind="greeting"></p>
+
+        <form>
+            <label>Debounce: </label>
+            <input ng-model="user.name" type="text" ng-model-options="{ debounce: 1000 }">
+
+           <p> Hello {{user.name}}</p>
+
+           <label>Blur: </label>
+            <input ng-model="user.name1" type="text" ng-model-options="{ updateOn: 'blur' }">
+
+           <p> Hello {{user.name1}}</p>
+
+        </form>
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+
+        <script type="text/javascript" src="js/bdirectives.js"></script>
+
+
+    </body>
+</html>
