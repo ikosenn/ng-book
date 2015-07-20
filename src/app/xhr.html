@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html ng-app="app.xhr">
     <head>
         <title>XHR and Server-Side Communication Angular</title>
@@ -6,6 +6,27 @@
     <body>
     <h1>Categories Data from Guidelines $resource</h1>
     <div ng-controller="CategoriesController">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Has Content</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="category in categories">
+                <td>{{category.id}}</td>
+                <td>{{category.name}}</td>
+                <td>{{category.code}}</td>
+                <td>{{category.hasContent}}</td>
+                <td></td>
+            </tr>
+       </table>
+    </div>
+
+     <h1>Categories Data from Guidelines Restangular</h1>
+    <div ng-controller="RestangularController">
         <table>
             <thead>
                 <tr>
