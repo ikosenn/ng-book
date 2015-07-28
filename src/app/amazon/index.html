@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazon in Angular</title>
+        <link rel="stylesheet" type="text/css" href="../../../bower_components/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+
+
+        <div class="ui-view"></div>
+
+        <script src="../../../bower_components/angular/angular.min.js"></script>
+        <script src="../../../bower_components/ui-router/release/angular-ui-router.js"></script>
+         <script type="text/javascript" src="https://sdk.amazonaws.com/js/aws-sdk-2.0.0-rc4.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/services.js"></script>
+        <script type="text/javascript" src="js/directives.js"></script>
+        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+        <script type="text/javascript">
+
+            (function (){
+                var po = document.createElement("script");
+                po.type = "text/javascript";
+                po.async = true;
+                po.src = "https://apis.google.com/" +
+                "js/client:plusone.js?onload=onLoadCallback";
+                var s = document.getElementByTagName("script")[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+
+        </script>
+
+
+    </body>
+</html>

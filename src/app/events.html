@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="app.events">
+    <head>
+        <title>Events in Angular</title>
+    </head>
+    <body>
+
+    <div ng-controller="FirstController">
+        <button ng-click="broadcast()">Broadcast</button>
+        <button ng-click="emit()">Emit</button>
+
+        <p>The broadcast messagae is <em>{{broad}} .... {{msg}}</em></p>
+        <p>The emmitted messagae is <em>{{em1}} .... {{emMsg1}}</em></p>
+        <div ng-controller="SecondController">
+            <button ng-click="broadcast()">Broadcast</button>
+            <button ng-click="emit()">Emit</button>
+            <p>The broadcast messagae is <em>{{broad}} .... {{msg}}</em></p>
+            <p>The emmitted messagae is <em>{{em2}} .... {{emMsg2}}</em></p>
+
+            <div ng-controller="ThirdController">
+                <button ng-click="broadcast()">Broadcast</button>
+                <button ng-click="emit()">Emit</button>
+                <p>The broadcast messagae is <em>{{broad}} .... {{msg}}</em></p>
+                <p>The emmitted messagae is <em>{{em3}} .... {{emMsg3}}</em></p>
+                <div ng-controller="FourthController">
+                    <button ng-click="broadcast()">Broadcast</button>
+                    <button ng-click="emit()">Emit</button>
+                    <p>The broadcast messagae is <em>{{broad}} .... {{msg}}</em></p>
+                    <p>The emmitted messagae is <em>{{em4}} .... {{emMsg4}}</em></p>
+
+                    <div ng-controller="FifthController">
+                        <button ng-click="broadcast()">Broadcast</button>
+                        <button ng-click="emit()">Emit</button>
+                        <p>The broadcast messagae is <em>{{broad}} .... {{msg}}</em></p>
+                        <p>The emmitted messagae is <em>{{em5}} .... {{emMsg5}}</em></p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+
+
+    </body>
+</html>

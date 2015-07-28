@@ -23,6 +23,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'bower_components/angular/angular.js',
+      "src/app/templates/*.html",
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-mocks/angular-mocks.js',
 
@@ -42,10 +43,17 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        "src/app/js/*.js": ["coverage"]
+        "src/app/js/*.js": ["coverage"],
+        "src/app/templates/*.html": ["ng-html2js"]
     },
 
-
+    ngHtml2JsPreprocessor: {
+        moduleName: "templates",
+        cacheIdFromPath: function(filepath){
+            return "src/app/templates" + filepath;
+        },
+        stripPrefix: "src/app/"
+    },
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
