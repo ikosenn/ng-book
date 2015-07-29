@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app.essential">
+    <head>
+        <title>Essential in Angular</title>
+
+    </head>
+    <body>
+
+        <div ng-controller="EssentialController">
+            <div ui-view="header"></div>
+            <div ui-view="body">{{student}}{{name}}
+            {{regNo}}</div>
+
+        </div>
+        <label>Phone Number</label>
+        <input ui-mask="(9999) (999) (999)" name="number" ng-model="user.phonenumber">
+
+
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script src="../../bower_components/ui-router/release/angular-ui-router.js"></script>
+        <script src="../../bower_components/angular-ui-mask/src/mask.js"></script>
+
+        <script type="text/javascript" src="js/essential.js"></script>
+
+
+    </body>
+</html>

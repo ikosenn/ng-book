@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app.filter">
+    <head>
+        <title>Filters Angular</title>
+    </head>
+    <body>
+        <div ng-controller="FilterController">
+            <p>{{ date_time | date: "medium"}}</p>
+            <p>{{ date_time | date: "short"}}</p>
+            <p>{{ date_time | date: "fullDate"}}</p>
+            <p>{{ date_time | date: "MMMM"}}</p>
+            <p>{{ date_time | date: "MMM"}}</p>
+            <p>{{ date_time | date: "hh::mm:ss.sss Z"}}</p>
+            <p>{{ "The quick brown fox jumps over the lazy dog."| limitTo: 5}}</p>
+            <p>{{friuts| limitTo: 2 }}</p>
+            <p>{{ students | orderBy: 'room'}}</p>
+            <p>{{random_text}}</p>
+            <p>{{"my filter that capitalizes all the a's in a string" | capitalizea }}</p>
+
+        </div>
+        <script src="../../bower_components/angular/angular.min.js"></script>
+
+        <script src="js/filters.js"></script>
+
+    </body>
+</html>

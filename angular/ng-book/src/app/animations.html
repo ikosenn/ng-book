@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="app.animations">
+    <head>
+        <title>Animations in Angular</title>
+
+        <style>
+            /*.ease{
+                transition: color 2s ease;
+                -webkit-transition: color 2s ease;
+            }*/
+
+            .ease{
+
+                color: red;
+            }
+
+            .ease.ng-enter{
+                 transition: all 2s linear;
+                -webkit-transition: all 2s linear;
+            }
+
+            .ease.ng-enter{
+                color: green;
+            }
+
+            .ease.ng-enter.ng-enter-active {
+                color: #551a8b;
+            }
+
+            .ease.ng-enter-stagger{
+                -webkit-transition-delay: 2s;
+                transition-delay: 2s;
+
+                /*safeguard inheritance*/
+
+                -webkit-transition-duration: 0;
+                transition-duration: 0;
+            }
+
+            .animate-away.ng-leave{
+                animation:animate-ngif 4s linear 1s;
+                -webkit-animation:animate-ngif 4s linear 1s;
+            }
+
+            @keyframes animate-ngif{
+                from {color:green;}
+                to {color: red;}
+            }
+
+            @-webkit-keyframes animate-ngif{
+                from {color:green;}
+                to {color: red;}
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div ng-controller="AnimationController">
+            <ul>
+                <li ng-repeat="city in cities" class ="ease" >{{city.country}} - {{city.city}}</li>
+            </ul>
+
+            <ul>
+                <li ng-repeat="city in cities" class ="ease-js" >{{city.country}} - {{city.city}}</li>
+            </ul>
+
+        </div>
+
+        <p ng-if="2+2 == 5" class="animate-away">Hello World</p>
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="js/animations.js"></script>
+
+
+    </body>
+</html>

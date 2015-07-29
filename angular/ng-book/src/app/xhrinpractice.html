@@ -1,0 +1,23 @@
+
+<html ng-app="app.xhrpractice">
+    <head>
+        <title>XHR and Server-Side Communication Angular</title>
+    </head>
+    <body>
+    <h1>Getting Emojis from GITHUB using JSONP</h1>
+    </h1>
+    <div ng-controller="EmojiController">
+
+        <img ng-repeat="img in emojis " ng-src = "{{img}}">
+
+    </div>
+
+
+
+        <script src="../../bower_components/angular/angular.min.js"></script>
+
+        <script type="text/javascript" src="js/xhrinpractice.js"></script>
+
+
+    </body>
+</html>
